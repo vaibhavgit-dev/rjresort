@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <>
-     <footer className="font-sans tracking-wide bg-gray-50 px-10 pt-12 pb-6">
+     <footer className="font-sans tracking-wide bg-gray-50 px-5 lg:px-10 pt-12 pb-6 mt-5">
       <div className="flex flex-wrap justify-between gap-10">
         <div className="max-w-md">
           <a href='javascript:void(0)'>
@@ -163,7 +163,7 @@ function Footer() {
           </li>
         </ul>
 
-        <p className='text-gray-600 text-sm md:ml-auto'>©All rights reserved.</p>
+        <p className='text-gray-600 text-sm md:ml-auto'>RJ Resort Copyright © 2024 .All rights reserved.</p>
       </div>
     </footer>
     </>
