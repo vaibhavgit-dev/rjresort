@@ -7,11 +7,10 @@ function Footer() {
       <div className="flex flex-wrap justify-between gap-10">
         <div className="max-w-md">
           <a href='javascript:void(0)'>
-            {/* <img src="https://readymadeui.com/readymadeui.svg" alt="logo" className='w-36' /> */}
-            RJ Resort Logo
+            <img src="/rj_logo.png" alt="logo" className='w-36' />
           </a>
           <div className="mt-6">
-            <p className="text-gray-600 leading-relaxed text-sm">ReadymadeUI is a library of pre-designed UI components built for Tailwind CSS. It offers a collection of versatile, ready-to-use components that streamline the development process by providing a wide range of UI elements.</p>
+            <p className="text-gray-600 leading-relaxed text-sm">Rj Resort Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima error fuga ut. Laudantium repellat quisquam iste magnam fuga praesentium, natus atque? Beatae vero cumque sapiente tenetur quasi! Laborum, ducimus beatae!</p>
           </div>
           <ul className="mt-10 flex space-x-5">
             <li>
@@ -33,11 +32,12 @@ function Footer() {
               <a href='javascript:void(0)'>
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" viewBox="0 0 152 152">
                   <linearGradient id="a" x1="22.26" x2="129.74" y1="22.26" y2="129.74" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#fae100" />
-                    <stop offset=".15" stop-color="#fcb720" />
-                    <stop offset=".3" stop-color="#ff7950" />
-                    <stop offset=".5" stop-color="#ff1c74" />
-                    <stop offset="1" stop-color="#6c1cd1" />
+                  <stop offset="0" stopColor="#fae100" />
+                  <stop offset=".15" stopColor="#fcb720" />
+                  <stop offset=".3" stopColor="#ff7950" />
+                  <stop offset=".5" stopColor="#ff1c74" />
+                  <stop offset="1" stopColor="#6c1cd1" />
+
                   </linearGradient>
                   <g data-name="Layer 2">
                     <g data-name="03.Instagram">
@@ -163,7 +163,7 @@ function Footer() {
           </li>
         </ul>
 
-        <p className='text-gray-600 text-sm md:ml-auto'>© ReadymadeUI. All rights reserved.</p>
+        <p className='text-gray-600 text-sm md:ml-auto'>©All rights reserved.</p>
       </div>
     </footer>
     </>
@@ -171,3 +171,4 @@ function Footer() {
 }
 
 export default Footer
+
