@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="flex flex-col min-h-screen">
         <Header />
-        <div className="theme-wrapper mt-[60px]">{children}</div>
+        <div className="theme-wrapper">{children}</div>
         <Footer />
       </body>
     </html>

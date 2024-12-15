@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         playfair: ['"Playfair Display"', 'serif'],
+        century: ['"Century Gothic"', 'sans-serif'],
       },
     },
   },

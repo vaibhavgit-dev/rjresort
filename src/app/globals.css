@@ -8,9 +8,21 @@
 html{scroll-behavior: smooth;}
 body {font-family: "Playfair Display", serif;}
 
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('/fonts/Century-Gothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
     font-size: 16px;
-  }
+}
+
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
   
   h1 {
     font-size: 2.75rem; /* Equivalent to 44px font weight should be medium*/
@@ -56,6 +68,7 @@ html {
   
   p {
     font-size: 1rem; /* Equivalent to 16px */
+    font-family: 'Century Gothic', sans-serif;
     font-weight: 400;
     line-height: 1.7;
   }
@@ -71,3 +84,98 @@ html {
     font-weight: 400;
     line-height: 1.7;
   }
+
+/* Home Slider Css */
+.swiper-slide {
+  opacity: 0 !important;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
+  visibility: visible;
+  z-index: 2; /* Ensure active slide is on top */
+}
+
+/* Fix for video layering */
+.slide-video {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.swiper-slide-active .slide-video {
+  opacity: 1;
+}
+
+/* Custom Navigation Arrows */
+/* Custom Navigation Arrows */
+/* Custom Button Styling */
+.custom-button {
+  border: 2px solid white; /* White border */
+  padding: 8px 20px; /* Button padding */
+  font-size: 18px; /* Font size */
+  color: white; /* Text color */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 15px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
+}
+
+/* Custom Navigation Arrows */
+.custom-arrow {
+  color: white;
+  position: absolute;
+  bottom: 20px; /* Align arrows at bottom */
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Circular shape */
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background on hover */
+  color: black; /* Black arrow color */
+}
+
+/* Position Left Arrow */
+.swiper-button-prev.custom-arrow {
+  right: 70px; /* Left arrow position */
+}
+
+/* Position Right Arrow */
+.swiper-button-next.custom-arrow {
+  right: 20px; /* Right arrow position */
+}
+
+/* Remove Default Swiper Arrow Styles */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+/* Hide Swiper's default navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+
+
+

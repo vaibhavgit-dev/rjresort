@@ -5,12 +5,12 @@ import Rjdarjeeling from "./components/rjdarjeeling";
 export default function Home() {
   return (
       <main className="">
-        <div className="container">
-          <div className="hidden">
-            <Slideshow />
-          </div>
+        <div className="w-full">
+        <Slideshow />
         </div>
+        <div className="w-full">
         <Rjdarjeeling/>
+        </div>
       </main>
   );
 }
