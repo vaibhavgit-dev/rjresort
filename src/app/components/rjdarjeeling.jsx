@@ -34,11 +34,11 @@ function Rjdarjeeling() {
               </button>
             </motion.div>
           </div>
-          <div className="col-span-12 lg:col-span-6">
+          <div className="col-span-12 lg:col-span-6 flex justify-center">
             <div className="relative w-full max-w-lg 2xl:max-w-2xl">
               <motion.img
                 className="w-full rounded-lg shadow-md"
-                src="/images/rj-darjeeling.jpg"
+                src="/images/rjresort.jpg"
                 alt=""
                 initial={{ opacity: 0.5, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -61,11 +61,11 @@ function Rjdarjeeling() {
 
       <section className="bg-orange-50 w-full section-padding">
         <div className="container mx-auto grid grid-cols-12 px-5 lg:px-10 gap-6">
-          <div className="col-span-12 lg:col-span-6 order-2 md:order-1">
+          <div className="col-span-12 lg:col-span-6 order-2 md:order-1 flex justify-start">
             <div className="relative w-full max-w-lg 2xl:max-w-2xl">
               <motion.img
                 className="w-full rounded-lg shadow-md"
-                src="/images/rj-darjeeling.jpg"
+                src="/images/aurom.jpg"
                 alt=""
                 initial={{ opacity: 0.5, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ function Rjdarjeeling() {
               />
               <motion.img
                 className="absolute bottom-[-20px] right-[-20px] w-2/5 rounded-lg border-2 border-themecolor-themebrown shadow-lg"
-                src="/images/room-darjeeling.jpg"
+                src="/images/aurom1.jpeg"
                 alt=""
                 initial={{ opacity: 0.5, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
