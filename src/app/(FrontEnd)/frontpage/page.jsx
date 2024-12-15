@@ -1,11 +1,12 @@
-import Header from '@/app/components/Header'
-import Footer from '@/app/components/Footer'
+import Footer from "@/app/components/footer"
+import Header from "@/app/components/header"
+
 
 function page() {
   return (
     <div>
       <Header />
-      <Footer/>
+      <Footer />
     </div>
   )
 }
