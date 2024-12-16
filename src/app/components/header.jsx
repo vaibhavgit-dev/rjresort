@@ -148,11 +148,11 @@ function Header() {
               </ul>
               )}
             </li>
-            <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='#'
-              class='hover:text-themecolor-themebrown text-gray-500 block font-semibold text-[15px]'>Careers</a>
+            <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='#'
+              className='hover:text-themecolor-themebrown text-gray-500 block font-semibold text-[15px]'>Careers</a>
             </li>
-            <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='#'
-              class='hover:text-themecolor-themebrown text-gray-500 block font-semibold text-[15px]'>Contact Us</a>
+            <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='#'
+              className='hover:text-themecolor-themebrown text-gray-500 block font-semibold text-[15px]'>Contact Us</a>
             </li>
           </ul>
         </div>

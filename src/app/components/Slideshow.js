@@ -35,7 +35,7 @@ export default function Slideshow() {
               <h1 className="text-white font-bold mb-6 w-[50%] text-center">
                 THE BEST LUXURY HOTEL IN COLOSSEUM
               </h1>
-              <button className="bg-[#b88b58] text-white px-6 py-3 rounded hover:bg-opacity-90 transition duration-300">
+              <button className="bg-themecolor-themebrown text-white px-6 py-3 rounded hover:bg-opacity-90 transition duration-300">
                 DISCOVER MORE
               </button>
             </div>
@@ -57,7 +57,7 @@ export default function Slideshow() {
               <h1 className="text-white font-bold mb-6 w-[50%] text-center">
                 ENJOY YOUR STAY
               </h1>
-              <button className="bg-[#b88b58] text-white px-6 py-3 rounded hover:bg-opacity-90 transition duration-300">
+              <button className="bg-themecolor-themebrown text-white px-6 py-3 rounded hover:bg-opacity-90 transition duration-300">
                 DISCOVER MORE
               </button>
             </div>
