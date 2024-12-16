@@ -34,7 +34,7 @@ export default function Slideshow() {
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30">
               <h1 className="text-white font-bold mb-6 w-[80%] text-center text-4xl">
-                THE BEST LUXURY HOTEL IN COLOSSEUM
+                The Best Luxury Hotel In Darjeeling
               </h1>
               <button className="bg-themecolor-themebrown text-white px-6 py-3 rounded hover:bg-opacity-90 transition duration-300">
                 DISCOVER MORE
@@ -56,7 +56,7 @@ export default function Slideshow() {
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30">
               <h1 className="text-white font-bold mb-6 w-[80%] text-center text-4xl">
-                ENJOY YOUR STAY
+                Enjoy Your Stay
               </h1>
               <button className="bg-themecolor-themebrown text-white px-6 py-3 rounded hover:bg-opacity-90 transition duration-300">
                 DISCOVER MORE
