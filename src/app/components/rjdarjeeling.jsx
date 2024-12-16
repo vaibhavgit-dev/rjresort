@@ -39,7 +39,7 @@ function Rjdarjeeling() {
             <div className="relative w-full max-w-lg 2xl:max-w-2xl">
               <motion.img
                 className="w-full rounded-lg shadow-md border-[12px] border-white"
-                src="/images/rjresort.jpg"
+                src="/images/rjresort.JPG"
                 alt=""
                 initial={{ opacity: 0.5, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
