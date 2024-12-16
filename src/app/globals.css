@@ -175,12 +175,21 @@ html {
 /* Remove Default Swiper Arrow Styles */
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  display: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #ca7d09;
+  height: 40px;
+  font-size: 22px !important;
+  width: 40px;
+  border-radius: 100vmax; 
 }
 /* Hide Swiper's default navigation arrows */
 .swiper-button-prev,
 .swiper-button-next {
-  display: none !important;
+  display: block !important;
+  right: 20px !important;
 }
 
 
