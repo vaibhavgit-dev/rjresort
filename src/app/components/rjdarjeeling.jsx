@@ -116,51 +116,52 @@ function Rjdarjeeling() {
       </section>
 
       <section className="container mx-auto section-padding">
-        <div className="grid grid-cols-12 px-5 lg:px-10 gap-6">
-          <div className="col-span-12 text-center">
+  <div className="grid grid-cols-12 px-5 lg:px-10 gap-6">
+    <div className="col-span-12 text-center">
+      <motion.img
+        className="w-20 mx-auto"
+        src="/images/rjiconlogo.png"
+        alt=""
+        initial={{ opacity: 0.5, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+      />
+      <h2 className="mb-3 text-4xl text-themecolor-themebrown relative">
+        RJ Resort, Darjeeling
+        <span className="block mx-auto mt-3 w-32 h-0.5 bg-themecolor-themebrown"></span>
+      </h2>
+      <p className="mt-8 mb-3 text-md text-black">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+      <div className="grid grid-cols-12 gap-6 mt-8">
+        {["/images/auromvenue.jpg", "/images/rjresortslider.JPG", "/images/aurom.jpg"].map((src, idx) => (
+          <div
+            key={idx}
+            className="col-span-12 lg:col-span-4 flex justify-center"
+          >
             <motion.img
-              className="w-20 mx-auto"
-              src="/images/rjiconlogo.png"
-              alt=""
-              initial={{ opacity: 0.5, y: -30 }}
+              className="w-full rounded-lg shadow-md border-[12px] border-white"
+              src={src}
+              alt={`Image ${idx + 1}`}
+              initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
             />
-            <h2 className="mb-3 text-4xl text-themecolor-themebrown relative">
-              RJ Resort, Darjeeling
-              <span className="block mx-auto mt-3 w-32 h-0.5 bg-themecolor-themebrown"></span>
-            </h2>
-            <p className="mt-8 mb-3 text-md text-black">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-            <div className="grid grid-cols-12 gap-6">
-              {[...Array(3)].map((_, idx) => (
-                <div
-                  key={idx}
-                  className="col-span-12 lg:col-span-4 flex justify-center"
-                >
-                  <motion.img
-                    className="w-full rounded-lg shadow-md border-[12px] border-white"
-                    src="/images/aurom.jpg"
-                    alt=""
-                    initial={{ opacity: 0, y: -30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
-                  />
-                </div>
-              ))}
-            </div>
-            <button className="text-md rounded-md text-white hover:text-themecolor-darkgreen bg-black px-8 py-2 mt-6">
-              Book Now
-            </button>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+      <button className="text-md rounded-md text-white hover:text-themecolor-darkgreen bg-black px-8 py-2 mt-8">
+        Book Now
+      </button>
+    </div>
+  </div>
+</section>
+
     </>
   );
 }

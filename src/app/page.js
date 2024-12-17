@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Slideshow from "./components/Slideshow";
 import Rjdarjeeling from "./components/rjdarjeeling";
+import Amenities from "./components/amenities";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         </div>
         <div className="w-full">
         <Rjdarjeeling/>
+        <Amenities />
         </div>
       </main>
   );

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "@/app/assets/css/custom.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaSignInAlt, FaUserPlus } from "react-icons/fa";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -125,12 +126,15 @@ function Header() {
           </ul>
         </div>
         <div className="flex max-lg:ml-auto space-x-4">
-          <button className="px-4 py-2 text-sm rounded-full font-bold text-themecolor-themebrown border-2 border-themecolor-themebrown bg-transparent hover:bg-themecolor-themebrown hover:text-white transition-all ease-in-out duration-300">
-            Login
-          </button>
-          <button className="px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-themecolor-themebrown bg-themecolor-themebrown transition-all ease-in-out duration-300 hover:bg-transparent hover:text-themecolor-themebrown">
-            Sign up
-          </button>
+          {/* Login Button */}
+      <button className="flex items-center justify-center px-4 py-2 text-sm rounded-full font-bold text-themecolor-themebrown border-2 border-themecolor-themebrown bg-transparent hover:bg-themecolor-themebrown hover:text-white transition-all ease-in-out duration-300">
+        <FaSignInAlt className="text-lg" /> {/* Login Icon */}
+      </button>
+
+      {/* Sign Up Button */}
+      <button className="flex items-center justify-center px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-themecolor-themebrown bg-themecolor-themebrown transition-all ease-in-out duration-300 hover:bg-transparent hover:text-themecolor-themebrown">
+        <FaUserPlus className="text-lg" /> {/* Sign-Up Icon */}
+      </button>
           <button id="toggleOpen" className="lg:hidden" onClick={handleToggle}>
             <svg
               className="w-7 h-7"

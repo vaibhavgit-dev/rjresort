@@ -19,14 +19,14 @@ export default function Slideshow() {
         }}
         navigation={true} // Navigation enabled
         modules={[Navigation, Autoplay, EffectFade]}
-        className="w-full h-[400px]"
+        className="w-full h-[560px]"
       >
         {/* Slide 1 */}
         <SwiperSlide>
           <div className="relative w-full h-full">
           <video
               src="/video.mp4"
-              className="absolute top-0 left-0 w-full h-[600px] object-cover"
+              className="absolute top-0 left-0 w-full h-[560px] object-cover"
               autoPlay
               loop
               muted
